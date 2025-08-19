@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabajo Práctico: Visualización de Datos Personales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #fafafa;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .visualizacion {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Trabajo Práctico: Visualización de Datos Personales</h1>
+
+  <h2>¿Cómo varió la duración de mi sueño a lo largo del tiempo?</h2>
+  <div class="visualizacion">
+    <div class="flourish-embed flourish-chart" data-src="visualisation/24742837">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/24742837/thumbnail" width="100%" alt="chart visualization" />
+      </noscript>
+    </div>
+  </div>
+
+</body>
+</html>
