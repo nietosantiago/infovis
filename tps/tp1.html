@@ -36,7 +36,7 @@
     }
     .visualizacion {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
     .introduccion {
       background: #fff;
@@ -48,6 +48,18 @@
     .tableauViz {
       width: 100%;
       height: 700px; /* altura fija para evitar errores */
+    }
+    .conclusion {
+      background: #fff;
+      padding: 15px 20px;
+      margin: 0 auto 50px auto;
+      max-width: 900px;
+      border-left: 5px solid #4CAF50;
+      border-radius: 8px;
+      text-align: left;
+    }
+    .conclusion strong {
+      color: #333;
     }
   </style>
 </head>
@@ -85,7 +97,7 @@
     </ul>
   </div>
 
-  <!-- Visualización 1 (Flourish) -->
+  <!-- Visualización 1 -->
   <h2>¿Cómo varió la duración de mi sueño a lo largo del tiempo?</h2>
   <div class="visualizacion">
     <div class="flourish-embed flourish-chart" data-src="visualisation/24742837">
@@ -95,20 +107,51 @@
       </noscript>
     </div>
   </div>
-
-  <!-- Visualización 2 (Datawrapper) -->
-  <h2>¿Qué porcentaje ocupa cada etapa del sueño en mis noches?</h2>
-  <div class="visualizacion">
-    <div style="min-height:600px" id="datawrapper-vis-PagYq">
-      <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/PagYq/embed.js" charset="utf-8" data-target="#datawrapper-vis-PagYq"></script>
-      <noscript>
-        <img src="https://datawrapper.dwcdn.net/PagYq/full.png" alt="¿Qué porcentaje tuvo cada etapa del sueño? (Stacked Bars)" />
-      </noscript>
-    </div>
+  <div class="conclusion">
+    <p><strong>Conclusión:</strong> La duración no es constante: existen noches con descanso excepcional y otras con déficit marcado. Esto muestra que la regularidad es un punto a trabajar. Mantener horarios estables podría mejorar la recuperación.</p>
   </div>
 
-  <!-- Visualización 3 (Tableau) -->
-  <h2>¿Cómo evoluciona tu descanso a lo largo del tiempo?</h2>
+  <!-- Visualización 2 -->
+  <h2>¿Qué porcentaje ocupa cada etapa del sueño en mis noches?</h2>
+  <div class="visualizacion">
+    <div class='tableauPlaceholder' id='viz1756841071983' style='position: relative'>
+      <noscript>
+        <a href='#'><img alt='¿Qué porcentaje ocupa cada etapa del sueño en mis noches? ' 
+          src='https://public.tableau.com/static/images/Ef/Eficienciadelsueo/Hoja2/1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='Eficienciadelsueo/Hoja2' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Ef/Eficienciadelsueo/Hoja2/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='es-ES' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1756841071983');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      vizElement.style.width='100%';
+      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+  </div>
+  <div class="conclusion">
+    <p><strong>Conclusión:</strong> Si las fases de sueño profundo o REM están por debajo de lo recomendado, es probable que el descanso no sea completamente reparador. Ajustar hábitos (evitar alcohol, optimizar el ambiente de sueño, mantener horarios estables) podría favorecer un mejor balance de las etapas.</p>
+  </div>
+
+  <!-- Visualización 3 -->
+  <h2>¿Cómo evoluciona mi descanso a lo largo del tiempo?</h2>
   <div class="visualizacion">
     <div class='tableauPlaceholder'>
       <object class='tableauViz'>
@@ -120,8 +163,11 @@
       </object>
     </div>
   </div>
+  <div class="conclusion">
+    <p><strong>Conclusión:</strong> Existe una relación entre despertares frecuentes y menor cantidad de horas dormidas. Incluso pequeñas interrupciones pueden tener un impacto significativo en el descanso real. Mejorar la continuidad del sueño es clave para alcanzar mayor recuperación física y mental.</p>
+  </div>
 
-  <!-- Visualización 4 (Tableau) -->
+  <!-- Visualización 4 -->
   <h2>¿Cuántos despertares tengo por noche y cómo afectan mi descanso?</h2>
   <div class="visualizacion">
     <div class='tableauPlaceholder'>
@@ -134,8 +180,11 @@
       </object>
     </div>
   </div>
+  <div class="conclusion">
+    <p><strong>Conclusión:</strong> A mayor cantidad de despertares, menor es la duración efectiva del sueño. Esto refuerza la importancia de generar un entorno libre de estímulos que provoquen interrupciones (ruido, luz, temperatura inadecuada).</p>
+  </div>
 
-  <!-- Visualización 5 (Tableau nuevo) -->
+  <!-- Visualización 5 -->
   <h2>¿Qué tan eficiente es mi sueño en comparación con el ideal?</h2>
   <div class="visualizacion">
     <div class='tableauPlaceholder'>
@@ -148,8 +197,11 @@
       </object>
     </div>
   </div>
+  <div class="conclusion">
+    <p><strong>Conclusión:</strong> Una eficiencia de sueño por debajo del 85 % indica dificultades para conciliar o mantener el sueño. Por otro lado, una eficiencia muy alta pero con pocas horas dormidas refleja que no se está dedicando suficiente tiempo total al descanso.</p>
+  </div>
 
-  <!-- Script de Tableau cargado una sola vez -->
+  <!-- Script de Tableau -->
   <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 
 </body>
