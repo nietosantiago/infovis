@@ -20,15 +20,66 @@
       margin-bottom: 15px;
       color: #333;
     }
+    h3 {
+      font-size: 20px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+    ul {
+      margin-left: 20px;
+    }
     .visualizacion {
       text-align: center;
       margin-bottom: 50px;
+    }
+    .introduccion {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
 
   <h1>Trabajo Práctico: Visualización de Datos Personales</h1>
+
+  <!-- Introducción -->
+  <div class="introduccion">
+    <h3>Introducción</h3>
+    <p>
+      Durante varias semanas registraste de forma detallada tu sueño. A partir de los datos podemos responder preguntas clave:
+    </p>
+    <ul>
+      <li>¿Cómo evoluciona tu descanso a lo largo del tiempo?</li>
+      <li>¿Qué proporción ocupa cada fase del sueño?</li>
+      <li>¿Qué factores influyen en la calidad del descanso?</li>
+      <li>¿Existen patrones semanales o mensuales que revelen hábitos de sueño?</li>
+    </ul>
+
+    <h3>Métricas de calidad del sueño</h3>
+    <p>Para medir la calidad, podemos considerar:</p>
+    <ul>
+      <li><strong>Duración total:</strong> entre 7 y 9 horas es el rango recomendado.</li>
+      <li><strong>Eficiencia del sueño:</strong> (tiempo dormido / tiempo en cama). Si es &gt;85%, se considera buen descanso.</li>
+      <li><strong>Distribución de fases:</strong> 
+        <ul>
+          <li>Sueño profundo: 15–25%</li>
+          <li>Sueño REM: 20–25%</li>
+          <li>Sueño ligero: resto</li>
+        </ul>
+      </li>
+      <li><strong>Número de despertares:</strong> menos despertares = sueño más reparador.</li>
+      <li><strong>Consistencia:</strong> regularidad en horarios y duración.</li>
+    </ul>
+  </div>
 
   <!-- Visualización 1 -->
   <h2>¿Cómo varió la duración de mi sueño a lo largo del tiempo?</h2>
@@ -54,4 +105,5 @@
 
 </body>
 </html>
+
 
