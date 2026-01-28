@@ -3,38 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 4 - Visualización de la información</title>
+    <title>Módulo 4 - Visualización de la Información</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f5f7fa;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 0.75rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        section p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Módulo 4 - Visualización de la información</h1>
 
-   <!-- Día 1 -->
-    <h2>Día 1: Gráficos RAWGraph</h2>
-    <img src="https://raw.githubusercontent.com/nietosantiago/infovis/main/rawgraph/uk_energy.png" 
-     alt="Gráfico generado con RAWGraph" style="max-width:100%; height:auto;">
+<header>
+    <h1>Módulo 4 · Visualización de la Información</h1>
+    <p>Trabajos prácticos realizados con distintas herramientas de visualización de datos</p>
+</header>
 
+<main>
 
+    <!-- Día 1 -->
+    <section>
+        <h2>Día 1 · Gráficos con RAWGraphs</h2>
+        <p>
+            Visualización de consumo energético del Reino Unido utilizando RAWGraphs,
+            enfocada en explorar relaciones entre categorías y evolución temporal.
+        </p>
+        <img 
+            src="https://raw.githubusercontent.com/nietosantiago/infovis/main/rawgraph/uk_energy.png" 
+            alt="Gráfico generado con RAWGraphs sobre consumo energético del Reino Unido">
+    </section>
 
     <!-- Día 2 -->
-    <h2>Día 2: Población por departamentos Censo 2010</h2>
-    <div class="flourish-embed flourish-hierarchy" data-src="visualisation/24656317">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-        <noscript>
-            <p>Tu navegador no soporta JavaScript. Podés ver la visualización aquí: 
-                <a href="https://nietosantiago.github.io/infovis/flourish/index.html" target="_blank">
-                    Visualización Día 2
-                </a>
-            </p>
-        </noscript>
-    </div>
+    <section>
+        <h2>Día 2 · Población por departamentos (Censo 2010)</h2>
+        <p>
+            Visualización jerárquica de la población por departamentos basada en datos
+            del Censo Nacional 2010, desarrollada con Flourish.
+        </p>
+
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/24656317">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript>
+                <p>
+                    Tu navegador no soporta JavaScript. Podés ver la visualización aquí:
+                    <a href="https://nietosantiago.github.io/infovis/flourish/index.html" target="_blank">
+                        Ver visualización
+                    </a>
+                </p>
+            </noscript>
+        </div>
+    </section>
 
     <!-- Día 3 -->
-    <h2>Día 3: Preferencias de hombres y mujeres para adicionar a la pizza</h2>
-    <div style="min-height:433px" id="datawrapper-vis-DVaOM">
-        <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/DVaOM/embed.js" charset="utf-8" data-target="#datawrapper-vis-DVaOM"></script>
-        <noscript>
-            <img src="https://datawrapper.dwcdn.net/DVaOM/full.png" alt="Preferencias de hombres y mujeres para adicionar a la pizza (Gráfico de rangos)" style="max-width:100%; height:auto;">
-        </noscript>
-    </div>
+    <section>
+        <h2>Día 3 · Preferencias de toppings en pizza</h2>
+        <p>
+            Comparación de preferencias entre hombres y mujeres para ingredientes adicionales
+            en pizza, utilizando un gráfico de rangos desarrollado con Datawrapper.
+        </p>
+
+        <div style="min-height: 430px" id="datawrapper-vis-DVaOM">
+            <script 
+                type="text/javascript" 
+                defer 
+                src="https://datawrapper.dwcdn.net/DVaOM/embed.js" 
+                charset="utf-8" 
+                data-target="#datawrapper-vis-DVaOM">
+            </script>
+            <noscript>
+                <img 
+                    src="https://datawrapper.dwcdn.net/DVaOM/full.png" 
+                    alt="Preferencias de toppings para pizza por género">
+            </noscript>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 · Santiago Nieto · Portfolio de Visualización de Datos
+</footer>
+
 </body>
 </html>
